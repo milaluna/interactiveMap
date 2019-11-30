@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "x": 344,
+      "y": 263,
+      "sound": "assets/sounds/sound0.m4a"
+    },
+    {
+      "x": 392,
+      "y": 319,
+      "sound": "assets/sounds/sound1.m4a"
+    },
+    {
+      "x": 637,
+      "y": 418,
+      "sound": "assets/sounds/sound2.m4a"
+    },
+    {
+      "x": 642,
+      "y": 391,
+      "sound": "assets/sounds/sound3.m4a"
+    },
+    {
+      "x": 623,
+      "y": 437,
+      "sound": "assets/sounds/sound4.m4a"
+    },
+    {
+      "x": 651,
+      "y": 601,
+      "sound": "assets/sounds/sound5.m4a"
+    },
+    {
+      "x": 515,
+      "y": 555,
+      "sound": "assets/sounds/sound6.m4a"
+    },
+    {
+      "x": 634,
+      "y": 674,
+      "sound": "assets/sounds/sound7.m4a"
+    },
+    {
+      "x": 649,
+      "y": 494,
+      "sound": "assets/sounds/sound8.m4a"
+    },
+    {
+      "x": 702,
+      "y": 495,
+      "sound": "assets/sounds/sound9.m4a"
+    },
+    {
+      "x": 705,
+      "y": 701,
+      "sound": "assets/sounds/sound10.m4a"
+    },
+    {
+      "x": 888,
+      "y": 668,
+      "sound": "assets/sounds/sound11.m4a"
+    },
+    {
+      "x": 782,
+      "y": 566,
+      "sound": "assets/sounds/sound12.m4a"
+    },
+    {
+      "x": 1026,
+      "y": 323,
+      "sound": "assets/sounds/sound13.m4a"
+    }
+  ]
+}
