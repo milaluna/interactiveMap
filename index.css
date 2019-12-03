@@ -1,40 +1,41 @@
 * {
-  margin: 0;
+  margin : 0;
   padding: 0;
 }
 
 body {
   font-family: 'Solway', serif;
-  font-size: 1.35em;
-  margin-top: 1.5em;
+  font-size  : 1.35em;
+  margin-top : 1.5em;
 }
 
-.title h1{
+.title h1 {
   color: cadetblue;
 }
 
-.title h2{
+.title h2 {
   color: #157BCF;
 }
 
 footer {
-  padding: 3em;
-  text-align: center;
+  padding         : 3em;
+  text-align      : center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#13579B));
   background-image: linear-gradient(to bottom, white, #13579B);
 }
 
-@media screen and (max-width: 992px){
-  body{
+@media screen and (max-width: 992px) {
+  body {
     font-size: 2.5em;
   }
 
-  .title h1{
+  .title h1 {
     font-size: 3.2em;
-    color: cadetblue;
+    color    : cadetblue;
   }
 
-  .title h2{
+  .title h2 {
     font-size: 2.8em;
-    color: #157BCF;
+    color    : #157BCF;
   }
 }

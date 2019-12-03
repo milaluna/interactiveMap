@@ -1,67 +1,62 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" width="device-width," initial-scale="1.0," maximum-scale="1.0," user-scalable="0">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width="device-width," initial-scale="1.0," maximum-scale="1.0," user-scalable="0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- p5js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+  <script src="http://p5js.org/assets/js/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+  <!-- own files -->
+  <script src="circle.js"></script>
+  <script src="sketch.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" type="image/png" href="assets/droplet.png" />
+  <title>Droplets of music</title>
+</head>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <!-- p5js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
-    <script src="http://p5js.org/assets/js/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
-
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
-
-    <!-- own files -->
-    <script src="circle.js"></script>
-    <script src="sketch.js"></script>
-    <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" type="image/png" href="assets/droplet.png"/>
-
-    <title>Droplets of music</title>
-  </head>
-
-  <body>
-    <div class="title text-center my-5">
-      <h1 class="">Droplets of music</h1>
-      <h2 class="">Fort 1881</h2>
-    </div>
-    <div class="explanation"></div>
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-lg-4 col-md-12">
-          <ul class="m-a">
-            <li>Each circle represents a recording of water droplets.</li>
-            <li>Tap one to play, tap more to harmonize!</li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <ul class="m-a">
-            <li>Tapping on them will turn them blue.</li>
-            <li>Tap again to stop.</li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <ul class="m-a">
-            <li>The location of the circles indicates where the sound was recorded in the fort.</li>
-            <li>
-              Go to
-              <a target="”_blank”" class="alert-link" href="https://milaluna.github.io/interactiveMap/">
+<body>
+  <div class="title text-center my-5">
+    <h1 class="">Droplets of music</h1>
+    <h2 class="">Fort 1881</h2>
+  </div>
+  <div class="explanation"></div>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-12">
+        <ul class="m-a">
+          <li>Each circle represents a recording of water droplets.</li>
+          <li>Tap one to play, tap more to harmonize!</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <ul class="m-a">
+          <li>Tapping on them will turn them blue.</li>
+          <li>Tap again to stop.</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <ul class="m-a">
+          <li>The location of the circles indicates where the sound was recorded in the fort.</li>
+          <li>
+            Go to
+            <a target="”_blank”" class="alert-link" href="https://milaluna.github.io/interactiveMap/">
                 Interactive Map
               </a>
-              for more!
-            </li>
-          </ul>
-        </div>
+            for more!
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
   </div>
   <div id="canvasContainer" class="text-center my-5 p-4 w-100 overflow-auto"></div>
   <footer>
