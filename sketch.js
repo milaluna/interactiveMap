@@ -5,6 +5,7 @@ var circles = [];
 // var sounds = []
 var testSound;
 var json;
+const ratio = 1511 / 1020;
 
 function preload() {
   img = loadImage('assets/images/soundMapInteract.jpg');
@@ -14,10 +15,14 @@ function preload() {
 
 function setup() {
   pixelDensity(1);
-  createCanvas(1511, 1020);
+  const canvasContainer = document.getElementById("canvasContainer");
+  const maxWidth = windowWidth;
+  const scaledHeight = ratio / maxWidth;
+  createCanvas(1511, 1020)
+    .parent(canvasContainer);
   for (let i = 0; i < json.data.length; i++) {
     var sound = loadSound(json.data[i].sound);
-    circles[i] = new Circle(json.data[i].x, json.data[i].y, 18, sound);
+    circles[i] = new Circle(json.data[i].x, json.data[i].y, 20, sound);
   }
 }
 
