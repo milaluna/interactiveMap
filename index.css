@@ -9,6 +9,16 @@ body {
   margin-top : 1.5em;
 }
 
+.invisible-link {
+  text-decoration: none;
+  color          : inherit;
+}
+
+.invisible-link:hover {
+  color          : darkblue;
+  text-decoration: none;
+}
+
 .title h1 {
   color      : black;
   font-weight: bold;
@@ -16,6 +26,15 @@ body {
 
 .title h2 {
   color: black;
+}
+
+.epxlanation {
+  position: absolute;
+}
+
+li {
+  /* list-style    : none; */
+  /* padding-bottom: 10px; */
 }
 
 footer {

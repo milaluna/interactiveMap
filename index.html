@@ -24,37 +24,39 @@
 </head>
 
 <body>
-  <div class="title text-center my-5">
+  <div class="title text-center">
     <h1 class="">Droplets of music</h1>
     <h2 class="">Fort 1881</h2>
   </div>
-  <div class="explanation"></div>
-  <div class="container my-5">
+  <div class="explanation">
+    <a href="#instructions" class="invisible-link">How does it work?</a>
+  </div>
+
+  <div id="canvasContainer" class="text-center my-2 p-4 w-100 overflow-auto" onclick="checkClickedCircle"></div>
+  <div id="instructions" class="container my-5">
     <div class="row">
-      <div class="col-lg-4 col-md-12">
-        <ul class="m-a">
-          <li>Each circle represents a recording of water droplets.</li>
-          <li>Tap one to play, tap more to harmonize!</li>
-        </ul>
-      </div>
-      <div class="col-lg-4 col-md-12">
-        <ul class="m-a">
-          <li>A circle will turn blue while its sound plays.</li>
-          <li>Tap again to stop.</li>
-        </ul>
-      </div>
-      <div class="col-lg-4 col-md-12">
-        <ul class="m-a">
-          <li>The location of the circles indicates where the sound was recorded in the fort.</li>
-        </ul>
+        <div class="col-lg-4 col-md-12">
+          <ul class="m-a">
+            <li>Each circle represents a recording of water droplets.</li>
+            <li>Tap one to play, tap more to harmonize!</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <ul class="m-a">
+            <li>A circle will turn blue while it plays.</li>
+            <li>Tap again to stop.</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <ul class="m-a">
+            <li>The location of the circles indicates where the sound was recorded in the fort.</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-  <div id="canvasContainer" class="text-center my-5 p-4 w-100 overflow-auto" onclick="checkClickedCircle"></div>
   <footer>
     <p>
-      <a class="badge special-hover" href="https://milabaumann.nl">MBMNN-DSGN</a>
+      <a class="invisible-link special-hover" href="https://milabaumann.nl">MBMNN-DSGN</a>
     </p>
   </footer>
   <!-- Optional JavaScript -->
