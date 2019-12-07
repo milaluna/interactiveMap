@@ -39,8 +39,12 @@ function draw() {
 }
 
 function mouseClicked() {
-  console.log(mouseX)
-  console.log(mouseY)
+  for (let i = 0; i < json.data.length; i++) {
+    var sound = loadSound(json.data[i].sound);
+  }
+  // console.log(mouseX)
+  // console.log(mouseY)
+
   for (let i = 0; i < circles.length; i++) {
     if (circles[i].isInside(mouseX, mouseY) === true) {
       circles[i].playSound();
