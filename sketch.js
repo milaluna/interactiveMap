@@ -26,8 +26,6 @@ function setup() {
   }
 }
 
-
-
 function draw() {
 
   background(img);
@@ -39,12 +37,10 @@ function draw() {
 }
 
 function mouseClicked() {
-  for (let i = 0; i < json.data.length; i++) {
-    var sound = loadSound(json.data[i].sound);
-  }
-  // console.log(mouseX)
-  // console.log(mouseY)
+  checkClickedCircle();
+}
 
+function checkClickedCircle(){
   for (let i = 0; i < circles.length; i++) {
     if (circles[i].isInside(mouseX, mouseY) === true) {
       circles[i].playSound();
