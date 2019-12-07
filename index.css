@@ -10,18 +10,18 @@ body {
 }
 
 .title h1 {
-  color: cadetblue;
+  color: black;
 }
 
 .title h2 {
-  color: #157BCF;
+  color: black;
 }
 
 footer {
   padding         : 3em;
   text-align      : center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#13579B));
-  background-image: linear-gradient(to bottom, white, #13579B);
+  /* background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#13579B)); */
+  /* background-image: linear-gradient(to bottom, white, #13579B); */
 }
 
 @media screen and (max-width: 992px) {
