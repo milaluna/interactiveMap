@@ -8,7 +8,7 @@ var json;
 const ratio = 1511 / 1020;
 
 function preload() {
-  img = loadImage('assets/images/soundMapInteract.jpg');
+  img = loadImage('assets/images/soundMap.jpg');
 
   json = loadJSON('circles.json')
 }
@@ -26,9 +26,8 @@ function setup() {
   }
 }
 
-
-
 function draw() {
+
   background(img);
   fill(255);
   for (let i = 0; i < circles.length; i++) {
@@ -38,6 +37,10 @@ function draw() {
 }
 
 function mouseClicked() {
+  checkClickedCircle();
+}
+
+function checkClickedCircle(){
   for (let i = 0; i < circles.length; i++) {
     if (circles[i].isInside(mouseX, mouseY) === true) {
       circles[i].playSound();

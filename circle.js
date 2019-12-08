@@ -4,7 +4,7 @@ class Circle {
     this.y = y;
     this.r = r;
     this.sound = sound;
-    this.shade = 255;
+    this.shade = 105;
   }
 
   isInside(x, y) {
@@ -28,14 +28,14 @@ class Circle {
   show() {
     push();
     if (this.sound.isPlaying()) {
-      this.shade = 0;
+      this.shade = 245;
     } else if (this.isInside(mouseX, mouseY)) {
-      this.shade = 200;
+      this.shade = 230;
     } else {
-      this.shade = 255;
+      this.shade = 180;
     }
 
-    fill(this.shade, 255, 255);
+    fill(105, this.shade-20, this.shade);
     ellipse(this.x, this.y, this.r);
 
     pop();
